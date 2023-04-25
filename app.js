@@ -27,7 +27,7 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
-
+console.log("test app js");
 
 // error handler
 app.use(function(err, req, res, next) {

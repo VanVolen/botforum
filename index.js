@@ -3,6 +3,7 @@ const app = express()
 const port = process.env.PORT || 3000
 const axios = require('axios');
 
+console.log("test index js");
 
 
 
