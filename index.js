@@ -20,7 +20,7 @@ app.get('/', (req, res) => res.send(lorem.generateParagraphs(7)))
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
-axios.post('https://ninjaworldrpg.forumotion.me/login', {
+axios.post('https://www.ninjaworldrpg.com/login', {
     username: 'Game Master',
     password: 'admin123',
     autologin: 'on',
