@@ -4,7 +4,7 @@ var axios = require("axios")
 
 router.get('/post', (req, res) => {
   postatlocation("test")
-  res.render('index', { title: 'Home' });
+  res.send('respond with a resource');  
 });
 
 const headerspost = {
