@@ -2,10 +2,6 @@ const express = require('express')
 const app = require("./app")
 const port = process.env.PORT || 3000
 const axios = require('axios')
-const cors = require('cors');
-const corsOptions = {exposedHeaders: ['Authorization', 'X-My-Custom-Header'],};
-app.use(cors(corsOptions));
-
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
@@ -22,19 +18,19 @@ const headers = {
   'user-agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36'
 };
 
-axios.post('https://www.ninjaworldrpg.com/login', {
-    username: 'Game Master',
-    password: 'admin123',
-    autologin: 'on',
-    login: 'Log in'
+// axios.post('https://www.ninjaworldrpg.com/login', {
+//     username: 'Game Master',
+//     password: 'admin123',
+//     autologin: 'on',
+//     login: 'Log in'
     
-}, {
-  headers: headers,
- // maxRedirects: 0
-})
-.then((response) => {
+// }, {
+//   headers: headers,
+//  // maxRedirects: 0
+// })
+// .then((response) => {
 
-})
-.catch((error) => {
-    console.error(error);
-});
+// })
+// .catch((error) => {
+//     console.error(error);
+// });
