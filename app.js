@@ -3,7 +3,6 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
 var cors = require('cors')
 
 var indexRouter = require('./routes/index');
@@ -21,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(cors({origin:'https://www.ninjaworldrpg.com'}))
+// app.use(cors({origin:'https://www.ninjaworldrpg.com'}))
 // app.options('*', cors()) // include before other routes
 
 app.use('/', indexRouter);
