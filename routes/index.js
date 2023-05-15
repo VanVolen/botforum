@@ -8,7 +8,6 @@ router.get('/post', (req, res) => {
 });
 
 router.get("/data", (req,res) => {
-  postatlocation(req.query.msg);
   res.send(req.query.msg + " PLUS OVO");  
 });
 
