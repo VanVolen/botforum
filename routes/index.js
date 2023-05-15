@@ -8,7 +8,7 @@ router.get('/post', (req, res) => {
 });
 
 router.get("/data", (req,res) => {
-  res.send(req.query.msg + " PLUS OVO");  
+  res.send(req.query.data + " PLUS OVO");  
 });
 
 const headerspost = {
