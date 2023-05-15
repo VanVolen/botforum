@@ -3,7 +3,8 @@ var router = express.Router();
 var axios = require("axios")
 
 router.get('/post', (req, res) => {
-  postatlocation("test")
+  console.log(req);
+  postatlocation(req.query.msg);
   res.send('respond with a resource');  
 });
 
