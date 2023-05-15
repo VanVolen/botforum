@@ -3,9 +3,13 @@ var router = express.Router();
 var axios = require("axios")
 
 router.get('/post', (req, res) => {
-  console.log(req);
   postatlocation(req.query.msg);
   res.send('respond with a resource');  
+});
+
+router.get("/data", (req,res) => {
+  postatlocation(req.query.msg);
+  res.send(req.query.msg + " PLUS OVO");  
 });
 
 const headerspost = {
