@@ -26,11 +26,8 @@ function postatlocation (data) {
     headers: headerspost,
   })
     .then(response => {
-      console.log(response); 
-
     })
     .catch(error => {
-      console.error(error);
     });
 }
 
